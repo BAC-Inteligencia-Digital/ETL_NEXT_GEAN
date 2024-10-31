@@ -11,8 +11,8 @@
   DTS:LocaleID="5130"
   DTS:ObjectName="ETL_SEC_VENTAS"
   DTS:PackageType="5"
-  DTS:VersionBuild="890"
-  DTS:VersionGUID="{5A2DA59B-0F67-4549-A176-68E9AE734C0A}">
+  DTS:VersionBuild="891"
+  DTS:VersionGUID="{5065C6B8-68C7-4297-BB60-11D002FF426C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAssG0KstVJF0sK9EykbfP3AAAAAASAAACgAAAAEAAAACvukC4YFLk99oiKDHOwjE8oAAAAAmk0FyHfJQw//2a+SAxjGhFNnqY2WtP9H4lP8BOlpSnNDLHBXOcpnRQAAACeCJa2pJIgMXhABmZWV5x7Ktz8eA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADrFNL6rvsERfijPuOCG5w+AAAAAASAAACgAAAAEAAAABISSREsb8V4KHFiwSDNyC8oAAAANYXUUFL7jmSdLJv25QJwPWrTqN9FscsjJfWKA2aFZJM1QpQZHAGJ+RQAAACjt7IpRhDumrazdm77OyBTqFRF+g</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB1UFtrPojBYxkccG7Nu/WoAAAAAASAAACgAAAAEAAAABvRhjnH0zAirp6TiWVL9PY4AAAACDd8s90EsGdWvegBh5svC5uPxQf3ivAS5bi6V3jfavtcsnozH/GowF4LRvmdRLk/hhAa/AjmihAUAAAAWtZCV1SsBO+770OVXcJ7W74DZno</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC7SjS2VppYg3KXEEXDGph1AAAAAASAAACgAAAAEAAAABsRWxYSxwQoS/UekutXVQY4AAAAnmKKy0FvSK5CbASvtUwmPbyOk485IZOwpNb1XlnMRFMUfTdaT3w5NLgaD7rOgpAeQ6gObroFyrMUAAAA841M9WjJg0XBnGT5fFLb2sgUEjw</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +63,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACm4gFfxLZoQ6jd1zMLCe5GAAAAAASAAACgAAAAEAAAAFenacdWBg9tkffSFyirR8EgAAAAcp4Fjs0XL4+N20vms5n66rME/RK0eujkG6oN9V8N1xcUAAAAG6ZIHD8XMPVDz7d+xzZQjgb2mnM</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh2epCBsdOEWMWPsPt/Zm4AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACIE8mHWmw18pUsH/Dn/pJSAAAAAASAAACgAAAAEAAAAGdWG40W4mdIy9Tpv+OCZ0EgAAAA27Y4NPQMBNoJv6UrZ6WxZq7l6AbRDB/DiAo4GrIT29gUAAAAaY0Bv/L/abb9ATxOVMCoAvUaNoA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -18941,6 +18941,14 @@ AND REG_FECHA_ULT_MODIF &gt;= CONVERT(varchar, GETDATE() - 5, 23)</property>
                           cachedName="CIF_COM"
                           externalMetadataColumnId="Package\OBTENER_LEADS\CASOS PEGA TJC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CIF_COM]"
                           lineageId="Package\OBTENER_LEADS\CASOS PEGA TJC\OLE DB Source.Outputs[OLE DB Source Output].Columns[CIF_COM]" />
+                        <inputColumn
+                          refId="Package\OBTENER_LEADS\CASOS PEGA TJC\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PAR_ID_OPORTUNIDAD]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="800"
+                          cachedName="PAR_ID_OPORTUNIDAD"
+                          externalMetadataColumnId="Package\OBTENER_LEADS\CASOS PEGA TJC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID_OPT_PADRE]"
+                          lineageId="Package\OBTENER_LEADS\CASOS PEGA TJC\OLE DB Source.Outputs[OLE DB Source Output].Columns[PAR_ID_OPORTUNIDAD]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -19022,7 +19030,7 @@ AND REG_FECHA_ULT_MODIF &gt;= CONVERT(varchar, GETDATE() - 5, 23)</property>
                           refId="Package\OBTENER_LEADS\CASOS PEGA TJC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RAZON]"
                           codePage="1252"
                           dataType="str"
-                          length="150"
+                          length="200"
                           name="RAZON" />
                         <externalMetadataColumn
                           refId="Package\OBTENER_LEADS\CASOS PEGA TJC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USUARIO_APERTURA]"
@@ -19100,6 +19108,12 @@ AND REG_FECHA_ULT_MODIF &gt;= CONVERT(varchar, GETDATE() - 5, 23)</property>
                           dataType="str"
                           length="10"
                           name="FUENTE" />
+                        <externalMetadataColumn
+                          refId="Package\OBTENER_LEADS\CASOS PEGA TJC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID_OPT_PADRE]"
+                          codePage="1252"
+                          dataType="str"
+                          length="25"
+                          name="ID_OPT_PADRE" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -19157,6 +19171,7 @@ AND REG_FECHA_ULT_MODIF &gt;= CONVERT(varchar, GETDATE() - 5, 23)</property>
                       UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select 
 
  a.CaseID as ID_OPORTUNIDAD,
+ a.CaseID as PAR_ID_OPORTUNIDAD,
  'HON' AS PAIS,
  CAST(a.CaseIDCreateDateTime_HourCR as date) AS FECHA_CREACION,
  CAST(a.CaseIDUpdateDateTime_HourCR as date) AS FECHA_MODIFICACION,
@@ -19387,6 +19402,17 @@ AND a.pyStatusWork != 'Resolved-Approved'</property>
                           lineageId="Package\OBTENER_LEADS\CASOS PEGA TJC\OLE DB Source.Outputs[OLE DB Source Output].Columns[CIF_COM]"
                           name="CIF_COM"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\OBTENER_LEADS\CASOS PEGA TJC\OLE DB Source.Outputs[OLE DB Source Output].Columns[PAR_ID_OPORTUNIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\OBTENER_LEADS\CASOS PEGA TJC\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PAR_ID_OPORTUNIDAD]"
+                          length="800"
+                          lineageId="Package\OBTENER_LEADS\CASOS PEGA TJC\OLE DB Source.Outputs[OLE DB Source Output].Columns[PAR_ID_OPORTUNIDAD]"
+                          name="PAR_ID_OPORTUNIDAD"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -19478,6 +19504,12 @@ AND a.pyStatusWork != 'Resolved-Approved'</property>
                           dataType="str"
                           length="800"
                           name="CIF_COM" />
+                        <externalMetadataColumn
+                          refId="Package\OBTENER_LEADS\CASOS PEGA TJC\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PAR_ID_OPORTUNIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          length="800"
+                          name="PAR_ID_OPORTUNIDAD" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -19492,6 +19524,13 @@ AND a.pyStatusWork != 'Resolved-Approved'</property>
                           length="800"
                           lineageId="Package\OBTENER_LEADS\CASOS PEGA TJC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ID_OPORTUNIDAD]"
                           name="ID_OPORTUNIDAD" />
+                        <outputColumn
+                          refId="Package\OBTENER_LEADS\CASOS PEGA TJC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PAR_ID_OPORTUNIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          length="800"
+                          lineageId="Package\OBTENER_LEADS\CASOS PEGA TJC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PAR_ID_OPORTUNIDAD]"
+                          name="PAR_ID_OPORTUNIDAD" />
                         <outputColumn
                           refId="Package\OBTENER_LEADS\CASOS PEGA TJC\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PAIS]"
                           codePage="1252"
@@ -19947,6 +19986,14 @@ AND a.pyStatusWork != 'Resolved-Approved'</property>
                           cachedName="CIF_COM"
                           externalMetadataColumnId="Package\OBTENER_LEADS\LEADS_EC_TARJETAS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CIF_COM]"
                           lineageId="Package\OBTENER_LEADS\LEADS_EC_TARJETAS\OLE DB Source.Outputs[OLE DB Source Output].Columns[CIF_COM]" />
+                        <inputColumn
+                          refId="Package\OBTENER_LEADS\LEADS_EC_TARJETAS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PAR_ID_OPORTUNIDAD]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="30"
+                          cachedName="PAR_ID_OPORTUNIDAD"
+                          externalMetadataColumnId="Package\OBTENER_LEADS\LEADS_EC_TARJETAS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID_OPT_PADRE]"
+                          lineageId="Package\OBTENER_LEADS\LEADS_EC_TARJETAS\OLE DB Source.Outputs[OLE DB Source Output].Columns[PAR_ID_OPORTUNIDAD]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -20028,7 +20075,7 @@ AND a.pyStatusWork != 'Resolved-Approved'</property>
                           refId="Package\OBTENER_LEADS\LEADS_EC_TARJETAS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RAZON]"
                           codePage="1252"
                           dataType="str"
-                          length="150"
+                          length="200"
                           name="RAZON" />
                         <externalMetadataColumn
                           refId="Package\OBTENER_LEADS\LEADS_EC_TARJETAS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USUARIO_APERTURA]"
@@ -20106,6 +20153,12 @@ AND a.pyStatusWork != 'Resolved-Approved'</property>
                           dataType="str"
                           length="10"
                           name="FUENTE" />
+                        <externalMetadataColumn
+                          refId="Package\OBTENER_LEADS\LEADS_EC_TARJETAS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID_OPT_PADRE]"
+                          codePage="1252"
+                          dataType="str"
+                          length="25"
+                          name="ID_OPT_PADRE" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -20163,6 +20216,7 @@ AND a.pyStatusWork != 'Resolved-Approved'</property>
                       UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">Select
 
 A.OpptyNumber as ID_OPORTUNIDAD,
+A.OpptyNumber as PAR_ID_OPORTUNIDAD,
 'HON' AS PAIS,
 CAST(A.CreationDate as date) as FECHA_CREACION,
 CAST(A.LastUpdateDate as date) as FECHA_MODIFICACION,
@@ -20448,6 +20502,17 @@ and A.OpptyNumber not like 'SX%'</property>
                           lineageId="Package\OBTENER_LEADS\LEADS_EC_TARJETAS\OLE DB Source.Outputs[OLE DB Source Output].Columns[CIF_COM]"
                           name="CIF_COM"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\OBTENER_LEADS\LEADS_EC_TARJETAS\OLE DB Source.Outputs[OLE DB Source Output].Columns[PAR_ID_OPORTUNIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\OBTENER_LEADS\LEADS_EC_TARJETAS\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PAR_ID_OPORTUNIDAD]"
+                          length="30"
+                          lineageId="Package\OBTENER_LEADS\LEADS_EC_TARJETAS\OLE DB Source.Outputs[OLE DB Source Output].Columns[PAR_ID_OPORTUNIDAD]"
+                          name="PAR_ID_OPORTUNIDAD"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -20549,6 +20614,12 @@ and A.OpptyNumber not like 'SX%'</property>
                           dataType="str"
                           length="80"
                           name="CIF_COM" />
+                        <externalMetadataColumn
+                          refId="Package\OBTENER_LEADS\LEADS_EC_TARJETAS\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PAR_ID_OPORTUNIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          length="30"
+                          name="PAR_ID_OPORTUNIDAD" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -20563,6 +20634,13 @@ and A.OpptyNumber not like 'SX%'</property>
                           length="30"
                           lineageId="Package\OBTENER_LEADS\LEADS_EC_TARJETAS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ID_OPORTUNIDAD]"
                           name="ID_OPORTUNIDAD" />
+                        <outputColumn
+                          refId="Package\OBTENER_LEADS\LEADS_EC_TARJETAS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PAR_ID_OPORTUNIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          length="30"
+                          lineageId="Package\OBTENER_LEADS\LEADS_EC_TARJETAS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PAR_ID_OPORTUNIDAD]"
+                          name="PAR_ID_OPORTUNIDAD" />
                         <outputColumn
                           refId="Package\OBTENER_LEADS\LEADS_EC_TARJETAS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PAIS]"
                           codePage="1252"
@@ -20747,6 +20825,7 @@ and A.OpptyNumber not like 'SX%'</property>
                       name="SqlCommand"
                       UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT 
     OPT.ROW_ID AS ID_OPORTUNIDAD,
+   OPT.ROW_ID AS PAR_ID_OPORTUNIDAD,
     OPT.PAIS as PAIS,
 	CAST(OPT.CREATED  AS date) as FECHA_CREADO,
 	CAST(OPT.LAST_UPD AS DATE) as FECHA_MODIFICACION,
@@ -21005,6 +21084,17 @@ WHERE YEAR(OPT.CREATED) &gt;= 2023
                           lineageId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS ATM.Outputs[OLE DB Source Output].Columns[CERRADO_MOTOR_LOCAL]"
                           name="CERRADO_MOTOR_LOCAL"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS ATM.Outputs[OLE DB Source Output].Columns[PAR_ID_OPORTUNIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS ATM.Outputs[OLE DB Source Output].ExternalColumns[PAR_ID_OPORTUNIDAD]"
+                          length="15"
+                          lineageId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS ATM.Outputs[OLE DB Source Output].Columns[PAR_ID_OPORTUNIDAD]"
+                          name="PAR_ID_OPORTUNIDAD"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -21102,6 +21192,12 @@ WHERE YEAR(OPT.CREATED) &gt;= 2023
                           dataType="str"
                           length="2"
                           name="CERRADO_MOTOR_LOCAL" />
+                        <externalMetadataColumn
+                          refId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS ATM.Outputs[OLE DB Source Output].ExternalColumns[PAR_ID_OPORTUNIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          length="15"
+                          name="PAR_ID_OPORTUNIDAD" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -21116,6 +21212,13 @@ WHERE YEAR(OPT.CREATED) &gt;= 2023
                           length="15"
                           lineageId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS ATM.Outputs[OLE DB Source Error Output].Columns[ID_OPORTUNIDAD]"
                           name="ID_OPORTUNIDAD" />
+                        <outputColumn
+                          refId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS ATM.Outputs[OLE DB Source Error Output].Columns[PAR_ID_OPORTUNIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          length="15"
+                          lineageId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS ATM.Outputs[OLE DB Source Error Output].Columns[PAR_ID_OPORTUNIDAD]"
+                          name="PAR_ID_OPORTUNIDAD" />
                         <outputColumn
                           refId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS ATM.Outputs[OLE DB Source Error Output].Columns[PAIS]"
                           codePage="1252"
@@ -21265,6 +21368,7 @@ WHERE YEAR(OPT.CREATED) &gt;= 2023
                       name="SqlCommand"
                       UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT 
     OPT.ROW_ID AS ID_OPORTUNIDAD,
+    OPT.ROW_ID AS PAR_ID_OPORTUNIDAD,
     OPT.PAIS as PAIS,
 	CAST(OPT.CREATED  AS date) as FECHA_CREADO,
 	CAST(OPT.LAST_UPD AS DATE) as FECHA_MODIFICACION,
@@ -21639,6 +21743,17 @@ WHERE YEAR(OPT.CREATED) &gt;= 2023
                           lineageId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS_WEB.Outputs[OLE DB Source Output].Columns[FUENTE]"
                           name="FUENTE"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS_WEB.Outputs[OLE DB Source Output].Columns[PAR_ID_OPORTUNIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS_WEB.Outputs[OLE DB Source Output].ExternalColumns[PAR_ID_OPORTUNIDAD]"
+                          length="15"
+                          lineageId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS_WEB.Outputs[OLE DB Source Output].Columns[PAR_ID_OPORTUNIDAD]"
+                          name="PAR_ID_OPORTUNIDAD"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -21736,6 +21851,12 @@ WHERE YEAR(OPT.CREATED) &gt;= 2023
                           dataType="str"
                           length="3"
                           name="FUENTE" />
+                        <externalMetadataColumn
+                          refId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS_WEB.Outputs[OLE DB Source Output].ExternalColumns[PAR_ID_OPORTUNIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          length="15"
+                          name="PAR_ID_OPORTUNIDAD" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -21750,6 +21871,13 @@ WHERE YEAR(OPT.CREATED) &gt;= 2023
                           length="15"
                           lineageId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS_WEB.Outputs[OLE DB Source Error Output].Columns[ID_OPORTUNIDAD]"
                           name="ID_OPORTUNIDAD" />
+                        <outputColumn
+                          refId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS_WEB.Outputs[OLE DB Source Error Output].Columns[PAR_ID_OPORTUNIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          length="15"
+                          lineageId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS_WEB.Outputs[OLE DB Source Error Output].Columns[PAR_ID_OPORTUNIDAD]"
+                          name="PAR_ID_OPORTUNIDAD" />
                         <outputColumn
                           refId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS_WEB.Outputs[OLE DB Source Error Output].Columns[PAIS]"
                           codePage="1252"
@@ -22073,6 +22201,14 @@ WHERE YEAR(OPT.CREATED) &gt;= 2023
                           cachedName="FUENTE"
                           externalMetadataColumnId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FUENTE]"
                           lineageId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS_WEB.Outputs[OLE DB Source Output].Columns[FUENTE]" />
+                        <inputColumn
+                          refId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PAR_ID_OPORTUNIDAD]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="15"
+                          cachedName="PAR_ID_OPORTUNIDAD"
+                          externalMetadataColumnId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID_OPT_PADRE]"
+                          lineageId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS_WEB.Outputs[OLE DB Source Output].Columns[PAR_ID_OPORTUNIDAD]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -22154,7 +22290,7 @@ WHERE YEAR(OPT.CREATED) &gt;= 2023
                           refId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RAZON]"
                           codePage="1252"
                           dataType="str"
-                          length="150"
+                          length="200"
                           name="RAZON" />
                         <externalMetadataColumn
                           refId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USUARIO_APERTURA]"
@@ -22232,6 +22368,12 @@ WHERE YEAR(OPT.CREATED) &gt;= 2023
                           dataType="str"
                           length="10"
                           name="FUENTE" />
+                        <externalMetadataColumn
+                          refId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID_OPT_PADRE]"
+                          codePage="1252"
+                          dataType="str"
+                          length="25"
+                          name="ID_OPT_PADRE" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -22462,6 +22604,14 @@ WHERE YEAR(OPT.CREATED) &gt;= 2023
                           cachedName="ESTADO_OPORTUNIDAD"
                           externalMetadataColumnId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ESTADO]"
                           lineageId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS ATM.Outputs[OLE DB Source Output].Columns[ESTADO_OPORTUNIDAD]" />
+                        <inputColumn
+                          refId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[PAR_ID_OPORTUNIDAD]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="15"
+                          cachedName="PAR_ID_OPORTUNIDAD"
+                          externalMetadataColumnId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ID_OPT_PADRE]"
+                          lineageId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS ATM.Outputs[OLE DB Source Output].Columns[PAR_ID_OPORTUNIDAD]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -22543,7 +22693,7 @@ WHERE YEAR(OPT.CREATED) &gt;= 2023
                           refId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[RAZON]"
                           codePage="1252"
                           dataType="str"
-                          length="150"
+                          length="200"
                           name="RAZON" />
                         <externalMetadataColumn
                           refId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[USUARIO_APERTURA]"
@@ -22621,6 +22771,12 @@ WHERE YEAR(OPT.CREATED) &gt;= 2023
                           dataType="str"
                           length="10"
                           name="FUENTE" />
+                        <externalMetadataColumn
+                          refId="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ID_OPT_PADRE]"
+                          codePage="1252"
+                          dataType="str"
+                          length="25"
+                          name="ID_OPT_PADRE" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -22881,6 +23037,14 @@ WHERE YEAR(OPT.CREATED) &gt;= 2023
                           cachedName="RAZÓN"
                           externalMetadataColumnId="Package\OBTENER_LEADS\LEADS_SIEBEL_PROCESO_2022\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RAZON]"
                           lineageId="Package\OBTENER_LEADS\LEADS_SIEBEL_PROCESO_2022\OLE DB Source.Outputs[OLE DB Source Output].Columns[RAZÓN]" />
+                        <inputColumn
+                          refId="Package\OBTENER_LEADS\LEADS_SIEBEL_PROCESO_2022\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PAR_ID_OPORTUNIDAD]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="15"
+                          cachedName="PAR_ID_OPORTUNIDAD"
+                          externalMetadataColumnId="Package\OBTENER_LEADS\LEADS_SIEBEL_PROCESO_2022\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID_OPT_PADRE]"
+                          lineageId="Package\OBTENER_LEADS\LEADS_SIEBEL_PROCESO_2022\OLE DB Source.Outputs[OLE DB Source Output].Columns[PAR_ID_OPORTUNIDAD]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -22962,7 +23126,7 @@ WHERE YEAR(OPT.CREATED) &gt;= 2023
                           refId="Package\OBTENER_LEADS\LEADS_SIEBEL_PROCESO_2022\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RAZON]"
                           codePage="1252"
                           dataType="str"
-                          length="150"
+                          length="200"
                           name="RAZON" />
                         <externalMetadataColumn
                           refId="Package\OBTENER_LEADS\LEADS_SIEBEL_PROCESO_2022\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USUARIO_APERTURA]"
@@ -23040,6 +23204,12 @@ WHERE YEAR(OPT.CREATED) &gt;= 2023
                           dataType="str"
                           length="10"
                           name="FUENTE" />
+                        <externalMetadataColumn
+                          refId="Package\OBTENER_LEADS\LEADS_SIEBEL_PROCESO_2022\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID_OPT_PADRE]"
+                          codePage="1252"
+                          dataType="str"
+                          length="25"
+                          name="ID_OPT_PADRE" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -23096,6 +23266,7 @@ WHERE YEAR(OPT.CREATED) &gt;= 2023
                       name="SqlCommand"
                       UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT 
     OPT.ROW_ID AS ID_OPORTUNIDAD,
+    OPT.ROW_ID AS PAR_ID_OPORTUNIDAD,
     OPT.PAIS as PAIS,
 	CAST(OPT.CREATED  AS date) as FECHA_CREADO,
 	CAST(OPT.LAST_UPD AS DATE) as FECHA_MODIFICACION,
@@ -23470,6 +23641,17 @@ WHERE YEAR(OPT.CREATED) = 2022
                           lineageId="Package\OBTENER_LEADS\LEADS_SIEBEL_PROCESO_2022\OLE DB Source.Outputs[OLE DB Source Output].Columns[CERRADO_MOTOR_LOCAL]"
                           name="CERRADO_MOTOR_LOCAL"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\OBTENER_LEADS\LEADS_SIEBEL_PROCESO_2022\OLE DB Source.Outputs[OLE DB Source Output].Columns[PAR_ID_OPORTUNIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\OBTENER_LEADS\LEADS_SIEBEL_PROCESO_2022\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PAR_ID_OPORTUNIDAD]"
+                          length="15"
+                          lineageId="Package\OBTENER_LEADS\LEADS_SIEBEL_PROCESO_2022\OLE DB Source.Outputs[OLE DB Source Output].Columns[PAR_ID_OPORTUNIDAD]"
+                          name="PAR_ID_OPORTUNIDAD"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -23567,6 +23749,12 @@ WHERE YEAR(OPT.CREATED) = 2022
                           dataType="str"
                           length="2"
                           name="CERRADO_MOTOR_LOCAL" />
+                        <externalMetadataColumn
+                          refId="Package\OBTENER_LEADS\LEADS_SIEBEL_PROCESO_2022\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PAR_ID_OPORTUNIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          length="15"
+                          name="PAR_ID_OPORTUNIDAD" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -23581,6 +23769,13 @@ WHERE YEAR(OPT.CREATED) = 2022
                           length="15"
                           lineageId="Package\OBTENER_LEADS\LEADS_SIEBEL_PROCESO_2022\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ID_OPORTUNIDAD]"
                           name="ID_OPORTUNIDAD" />
+                        <outputColumn
+                          refId="Package\OBTENER_LEADS\LEADS_SIEBEL_PROCESO_2022\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PAR_ID_OPORTUNIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          length="15"
+                          lineageId="Package\OBTENER_LEADS\LEADS_SIEBEL_PROCESO_2022\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PAR_ID_OPORTUNIDAD]"
+                          name="PAR_ID_OPORTUNIDAD" />
                         <outputColumn
                           refId="Package\OBTENER_LEADS\LEADS_SIEBEL_PROCESO_2022\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PAIS]"
                           codePage="1252"
@@ -26014,7 +26209,7 @@ WHERE YEAR(OPT.CREATED) = 2022
     design-time-name="Package\OBTENER_LEADS\CASOS PEGA TJC">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="170.666666666667,42"
           Id="Package\OBTENER_LEADS\CASOS PEGA TJC\OLE DB Destination"
@@ -26042,9 +26237,7 @@ WHERE YEAR(OPT.CREATED) = 2022
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -26075,7 +26268,7 @@ WHERE YEAR(OPT.CREATED) = 2022
     design-time-name="Package\OBTENER_LEADS\LEADS_EC_TARJETAS">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="170.666666666667,42"
           Id="Package\OBTENER_LEADS\LEADS_EC_TARJETAS\OLE DB Destination"
@@ -26119,9 +26312,7 @@ WHERE YEAR(OPT.CREATED) = 2022
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26155,9 +26346,7 @@ WHERE YEAR(OPT.CREATED) = 2022
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -26188,7 +26377,7 @@ WHERE YEAR(OPT.CREATED) = 2022
     design-time-name="Package\OBTENER_LEADS\LEADS_SIEBEL_HON">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="178,42"
           Id="Package\OBTENER_LEADS\LEADS_SIEBEL_HON\LEADS_WEB"
@@ -26224,9 +26413,7 @@ WHERE YEAR(OPT.CREATED) = 2022
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26248,9 +26435,7 @@ WHERE YEAR(OPT.CREATED) = 2022
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -26292,7 +26477,7 @@ WHERE YEAR(OPT.CREATED) = 2022
     design-time-name="Package\OBTENER_LEADS\LEADS_SIEBEL_PROCESO_2022">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="170.666666666667,42"
           Id="Package\OBTENER_LEADS\LEADS_SIEBEL_PROCESO_2022\OLE DB Destination"
@@ -26332,9 +26517,7 @@ WHERE YEAR(OPT.CREATED) = 2022
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
